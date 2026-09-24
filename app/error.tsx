@@ -1,0 +1,1 @@
+"use client"; export default function Error(){return <main className="success"><span className="eyebrow">Something went wrong</span><h1 style={{fontFamily:"var(--serif)",fontSize:56}}>Please try again.</h1><p>We couldn't load this page right now.</p><a className="button" href="/">Return home</a></main>}
