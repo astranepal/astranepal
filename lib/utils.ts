@@ -1,0 +1,2 @@
+export const formatNpr=(v:number|string)=>new Intl.NumberFormat("en-NP",{style:"currency",currency:"NPR",maximumFractionDigits:0}).format(Number(v));
+export const deliveryFee=(subtotal:number)=>subtotal>=3000?0:120;
