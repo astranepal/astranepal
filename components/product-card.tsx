@@ -7,8 +7,8 @@ import { WishlistButton } from "@/components/wishlist-button";
 export function ProductCard({ product }: { product: Product }) {
   return (
     <article className="card">
-      <Link href={"/products/" + product.slug}>
-        <div className="card-image">
+      <div className="card-image">
+        <Link href={"/products/" + product.slug} aria-label={"View " + product.name}>
           {product.images[0] && (
             <Image
               src={product.images[0]}
@@ -17,10 +17,10 @@ export function ProductCard({ product }: { product: Product }) {
               sizes="(max-width:520px) 50vw,(max-width:760px) 33vw,(max-width:1080px) 33vw,25vw"
             />
           )}
-          {product.discount > 0 && <span className="badge">-{product.discount}%</span>}
-          <WishlistButton productId={product.id} />
-        </div>
-      </Link>
+        </Link>
+        {product.discount > 0 && <span className="badge">-{product.discount}%</span>}
+        <WishlistButton productId={product.id} />
+      </div>
 
       <div className="card-info">
         <div className="meta">
