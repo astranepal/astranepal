@@ -1,0 +1,2 @@
+"use client"; import Link from "next/link"; import {useCart} from "@/components/cart-provider";
+export function Header(){const {count}=useCart();return <header className="header"><nav className="nav"><Link href="/" className="brand">ASTRA MEN</Link><div className="navlinks"><Link href="/products">Shop</Link><Link href="/products?collection=new-arrivals">New</Link><Link href="/products?collection=street-style">Street</Link></div><div className="nav-actions"><Link href="/login">Account</Link><Link href="/cart" className="bag">Bag ({count})</Link></div></nav></header>}
