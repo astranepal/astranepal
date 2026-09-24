@@ -165,7 +165,7 @@ export function AddToCart({ product }: { product: Product }) {
         </button>
       </div>
 
-      {msg && <div className="inline-message meta">{msg}</div>}
+      {msg ? <div className="inline-message meta">{msg}</div> : null}
     </div>
   );
 }
