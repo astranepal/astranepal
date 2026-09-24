@@ -1,0 +1,1 @@
+import Link from "next/link"; export default function NotFound(){return <main className="success"><span className="eyebrow">404</span><h1 style={{fontFamily:"var(--serif)",fontSize:64}}>Page not found.</h1><p>The page you're looking for doesn't exist.</p><Link className="button" href="/">Back to home</Link></main>}
