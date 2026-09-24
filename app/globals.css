@@ -221,7 +221,7 @@ img{object-fit:cover}
   .brand{font-size:16px}
   .searchbar{display:none}
   .nav-actions .account-link,.nav-actions .wish-link{display:none}
-  .mobile-menu{padding-inline:16px}
+  .mobile-menu{padding-inline:16px}.mobile-menu .searchbar{display:flex}
   .hero-wrap{padding-top:16px}
   .hero{min-height:615px;border-radius:25px}
   .hero-copy{padding:66px 24px 90px}
