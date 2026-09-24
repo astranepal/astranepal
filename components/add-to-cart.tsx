@@ -55,7 +55,9 @@ export function AddToCart({ product }: { product: Product }) {
     setMsg("Added to bag.");
 
     if (buy) {
-      window.location.href = "/checkout";
+      window.setTimeout(() => {
+        window.location.href = "/checkout";
+      }, 0);
     }
   }
 
