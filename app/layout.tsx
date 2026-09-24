@@ -1,0 +1,3 @@
+import type {Metadata} from "next"; import "./globals.css"; import {Header} from "@/components/header"; import {CartProvider} from "@/components/cart-provider";
+export const metadata:Metadata={title:"ASTRA MEN — Modern menswear",description:"Clean, considered menswear designed in Kathmandu."};
+export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="en"><body><CartProvider><Header/>{children}<footer className="footer"><div><strong>ASTRA MEN</strong><span>Clean cuts. Durable fabrics. No unnecessary noise.</span></div><small>© 2026 ASTRA MEN</small></footer></CartProvider></body></html>}
