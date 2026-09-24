@@ -105,7 +105,7 @@ img{object-fit:cover}
 .card{min-width:0;background:var(--surface);border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 5px 20px rgba(17,24,39,.035);transition:.2s}
 .card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
 .card-image{position:relative;aspect-ratio:4/5;background:var(--surface-2);overflow:hidden}
-.card-image:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(17,24,39,.03),transparent 35%,rgba(17,24,39,.06));pointer-events:none}
+.card-image>a{position:absolute;inset:0;z-index:1}.card-image:after{content:"";position:absolute;inset:0;z-index:2;background:linear-gradient(180deg,rgba(17,24,39,.03),transparent 35%,rgba(17,24,39,.06));pointer-events:none}
 .card-image img{transition:transform .45s cubic-bezier(.2,.7,.2,1)}
 .card:hover .card-image img{transform:scale(1.035)}
 .badge{position:absolute;z-index:2;left:11px;top:11px;background:#fff;color:var(--accent);padding:6px 9px;font-size:10px;border-radius:999px;font-weight:800;box-shadow:0 5px 16px rgba(17,24,39,.08)}
